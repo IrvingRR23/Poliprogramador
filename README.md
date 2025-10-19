@@ -83,7 +83,7 @@ El propósito principal de **Poliprogramador** es ofrecer un entorno web que per
    http://localhost/Poliprogramador/Login-Register/Index.php
 
 ##  Vista general
-![alt text](image-1.png)
+![alt text](image.png)
 
 ##  Autor
 **Irving Rodríguez Rodríguez**  
