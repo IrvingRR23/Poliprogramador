@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../Imagenes/F2.webp); /*Fondo*/
+    background-size: cover;  /*Se adapta al tamaño*/
+    background-repeat: no-repeat;   /*Evitar repeticiones del fondo*/
+    background-position: center; /*Se ubique en el centro del fondo*/
+    background-attachment: fixed; /*Abarca todo el fondo*/
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px; /*Maximo de esta caja*/
+    margin: auto;       /*Centrado automatico*/
+    position: relative; /*Posicionamiento automatico*/
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px; /*10 px de arriba-abajo y 20px de izquierda-derecha*/
+    display: flex; /*Generacion de columnas*/
+    justify-content: center; /*Centrar contenido*/
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /*Ayuda al desenfoque*/
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caja__trasera div{
+    margin: 100px 40px; /*Margen de alto y ancho*/
+    color: white;   /*Color de la letra*/
+    transition: all 500ms; /*Tiempo del movimiento*/
+}
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px; /*Separacion entre boton y parrafo*/
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px; /*Alto de 10px y 40px de separacion a los lados*/
+    border: 2px solid white; /*Margen blanco de 2px*/
+    font-size: 14px;
+    background: transparent;    /*Fondo transparente*/
+    font-weight: 600; /*Grosor del texto*/
+    cursor: pointer; /*El cursor cambia por tratarse de un boton*/
+    color: white;   /*Texto del boton*/
+    outline: none;  /*Eliminar lineas de presion de boton*/
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: black;
+}
+
+/*Formularios*/
+.contenedor__login-register{
+    display: flex; /*Posicionar de forma vertical los fomrularios*/
+    align-items: center; /*Posicionar en el centro*/
+    width: 100%;
+    max-width: 380px; /*Ancho max de los formularios*/
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px; /*Alto de 80px y 20px de separacion a los lados*/
+    background: #fff; /*Color*/
+    position: absolute; /*Movimiento del contenedor*/
+    border-radius: 20px; /*Bordes redondos*/
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center; /*Texto centrado*/
+    margin-bottom: 20px; /*Espaciado con el texto*/
+    color: black;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none; /*Eliminar bordes*/
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none; /*Opcional - quita lineas de seleccion*/
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px; /*Alto de 10px y 40px de separacion a los lados*/
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    outline: none;  /*Quita lineas de seleccion*/
+    border-radius: 10px; /*Bordes redondos*/
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 850px){ /*Condicion a trabajar es tamaño de pagina menor a 850px*/
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column; /*Aqui se ordenara por columnas y no por renglon*/
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*Formulario*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+
+}

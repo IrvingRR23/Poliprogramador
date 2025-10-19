@@ -1,0 +1,278 @@
+:root {
+    --col: black;
+    --Fondo: #4B8BBE;
+    --Fondo2: #FFD43B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4B8BBE;
+    
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .LogoT {
+    font-family: 'Rowdies', cursive;
+    font-weight: normal;
+    color: var(--col);
+    font-size: 40px;
+}
+
+header nav a {
+    font-family: 'Rowdies', cursive;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #ffffff;
+    background-color: var(--Fondo2);
+    padding: 1rem;
+}
+
+/*Principal*/
+.principal {
+    height: calc(200%);
+    font-size: 16px;
+    min-height: 50em;
+    color: black;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.principal .contenedor {
+    margin: 0 auto;
+    size: 8cm;
+    margin-bottom: 6.25em;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.principal .titulo {
+    font-family: 'Rowdies', cursive;
+    font-weight: 500;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+    color: var(--col);
+}
+
+.principal .descrip {
+    font-family: 'Rowdies', cursive;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 28px;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+    align-items: center;
+}
+
+.principal .boton {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.principal .boton i {
+    margin-right: 1.25em;
+}
+
+@media screen and (max-width: 800px) {
+    header .LogoT {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal {
+        font-size: 14px;
+    }
+
+    .principal .descrip {
+        max-width: 100%;
+    }
+}
+
+a:link {
+    color: black;
+}
+
+
+a:visited {
+    color: black;
+}
+
+
+a:hover {
+    color: #4B8BBE;
+}
+
+
+a:active {
+    color: black;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.multiback{
+    background:#FFD43B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+}
+/*CSS Agregado*/
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  } 
+
+body{
+    font-size: 16px; /*10px = 1rem*/
+    font-family: 'Lato', sans-serif
+}
+
+footer{
+    margin: auto;    
+}
+
+.imglogo{
+
+    width: 17rem;
+    margin: 0;
+    padding: 0;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.recursos-title{
+
+    padding: 0.7rem;
+    background-color: var(--col);
+    color: black;
+    background-color: #FFD43B;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+    font-size: 2rem;
+}  
+
+/*Acordeon de secciones*/
+.accordion {
+    background: #7a7a7a;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.4s;
+    font-family: 'Rowdies',cursive;
+    font-size: 100%;
+  }
+  
+  .active, .accordion:hover {
+    color: black;
+    background-color: white; 
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /*Estilo de tabla*/
+  table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: .5rem;
+  }
+
+  table{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  th{
+    background-color: var(--col);
+    color: #fff;
+  }
+
+  .table-wrapper {
+    display: grid;
+    place-content: center;
+  }
+  
+  .table {
+    border: 1px solid black;
+  }
+
+  iframe{
+    width: 30rem;
+    height: 20rem;
+  }
