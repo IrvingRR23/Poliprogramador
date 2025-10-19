@@ -1,8 +1,8 @@
-# 💻 Poliprogramador
+#  Poliprogramador
 
 **Poliprogramador** es una plataforma educativa desarrollada en **PHP, HTML, CSS y MySQL** que tiene como objetivo ayudar a las personas a **aprender a programar desde cero** en distintos lenguajes como **C, Java y Python**. El sistema está diseñado para organizar los contenidos por temas y descripciones de cada lenguaje, además de incluir un **chatbot interactivo** y una **sección de comentarios** para reforzar el aprendizaje.
 
-## 🧠 Objetivo del proyecto
+##  Objetivo del proyecto
 El propósito principal de **Poliprogramador** es ofrecer un entorno web que permita:
 - Aprender los fundamentos de **C**, **Java** y **Python** de forma segmentada y estructurada.
 - Comprender las características y diferencias entre lenguajes de programación.
@@ -10,15 +10,15 @@ El propósito principal de **Poliprogramador** es ofrecer un entorno web que per
 - Fomentar la participación a través de una **sección de comentarios** y retroalimentación.
 - Administrar usuarios mediante un **panel de control** exclusivo para administradores.
 
-## ⚙️ Funcionalidades principales
+## Funcionalidades principales
 
-### 👨‍🎓 Sección de usuario
+###  Sección de usuario
 - Registro e inicio de sesión seguro (sistema **Login/Register** con MySQL).
 - Acceso al contenido de aprendizaje de los lenguajes C, Java y Python.
 - Navegación por temas y descripciones individuales de cada lenguaje.
 - Acceso al chatbot y envío de comentarios o sugerencias.
 
-### 🧑‍💼 Sección de administrador
+###  Sección de administrador
 - Acceso especial mediante **rol de administrador**.
 - Control total sobre los usuarios registrados:
   - Visualización de todos los usuarios.
@@ -26,7 +26,7 @@ El propósito principal de **Poliprogramador** es ofrecer un entorno web que per
   - Eliminación de cuentas.
 - Control general del sistema educativo.
 
-## 🧩 Tecnologías utilizadas
+## Tecnologías utilizadas
 | Tecnología | Uso principal |
 |-------------|----------------|
 | **PHP** | Lógica del servidor y conexión con la base de datos |
@@ -37,44 +37,14 @@ El propósito principal de **Poliprogramador** es ofrecer un entorno web que per
 | **Font Awesome** | Íconos y elementos visuales |
 | **XAMPP** | Entorno local de desarrollo (Apache + MySQL) |
 
-## 🔐 Roles de usuario
+##  Roles de usuario
 | Rol | Permisos |
 |-----|-----------|
-| 👨‍🎓 **Usuario normal** | Puede registrarse, iniciar sesión, acceder al contenido y usar el chatbot y comentarios. |
-| 👑 **Administrador** | Puede acceder al panel administrativo, ver, editar y eliminar usuarios. |
+|  **Usuario normal** | Puede registrarse, iniciar sesión, acceder al contenido y usar el chatbot y comentarios. |
+|  **Administrador** | Puede acceder al panel administrativo, ver, editar y eliminar usuarios. |
 
-## 📂 Estructura general del proyecto
-Poliprogramador/
-├── Login-Register/
-│   ├── PHP/
-│   │   ├── Conexion_BE.php
-│   │   ├── Registro.php
-│   │   ├── Login.php
-│   │   └── Cerrar_Sesion.php
-│   └── Index.php
-│
-├── Pagina_Principal/
-│   ├── Index.php
-│   ├── Lenguajes/
-│   │   ├── C/
-│   │   ├── Java/
-│   │   └── Python/
-│   ├── ChatBot/
-│   └── Comentarios/
-│
-├── Pagina_Principal_Admin/
-│   └── CRUD/
-│       ├── Admin.php
-│       ├── Actualizar.php
-│       ├── Eliminar.php
-│       └── Conexion.php
-│
-├── CSS/
-│   └── Estilos.css
-└── Imagen/
-    └── Logo-P.ico
 
-## 🧰 Base de datos
+##  Base de datos
 **Nombre:** `login_register_db`  
 **Tabla principal:** `usuarios`
 
@@ -87,7 +57,7 @@ Poliprogramador/
 | `clave` | VARCHAR(255) | Contraseña (puede cifrarse con SHA-512) |
 | `id_rol` | INT | 0 = Usuario, 1 = Administrador |
 
-## 🚀 Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 1. Instala [XAMPP](https://www.apachefriends.org/es/index.html).
 2. Copia la carpeta del proyecto dentro de:
    C:\xampp\htdocs\
@@ -112,15 +82,10 @@ Poliprogramador/
 7. Abre tu navegador y accede a:
    http://localhost/Poliprogramador/Login-Register/Index.php
 
-## 📸 Vista general
-*(Agrega aquí capturas de pantalla de tu login, panel admin y páginas de los lenguajes)*
+##  Vista general
+![alt text](image-1.png)
 
-## 🧑‍💻 Autor
+##  Autor
 **Irving Rodríguez Rodríguez**  
 Desarrollado como proyecto educativo para fomentar el aprendizaje de programación y la gestión de usuarios en sistemas web.
 
-## 🧾 Licencia
-Este proyecto es de uso educativo y libre para propósitos de aprendizaje.  
-No está destinado a uso comercial.
-
-### ⭐ Si este proyecto te sirvió para aprender o inspirarte, considera darle una estrella en GitHub ⭐
